@@ -28,6 +28,10 @@ class Instructors extends Person{
         console.log(`${student.name} receives a perfect score on 
         ${subject}`)
     }
+    changeStudentGrade(student){
+        let originalGrade = student.grade;
+        console.log(`${student.name}'s original score was ${originalGrade}. It's now ${originalGrade+(Math.round(Math.random()*10)-5)}.`)//will return positive OR negative..
+    }
 }
 
 
@@ -48,6 +52,13 @@ class Students extends Person{
     }
     sprintChallenge(subject){
         console.log(`${this.name} has begun sprint challenge on ${subject}`);
+    }
+    graduate(){
+        if(this.grade>70){
+            console.log(`${this.name}'s grade is is a ${this.grade}%! ${this.name} can graduate!`)
+        }else{
+            console.log(`${this.name}'s grade is is a ${this.grade}%. ${this.name} needs to raise their score by ${70-this.grade}% to graduate!`);
+        }
     }
 }
 
@@ -230,4 +241,9 @@ console.log(tom.listsSubjects())
 console.log(ron.PRAssignment("prototypes"))
 console.log(jordan.sprintChallenge("classes"))
 
+console.log(' ');
+console.log('           ===log stretch method===');
+console.log(jess.changeStudentGrade(tom));
 
+console.log(tom.graduate());
+console.log(ron.graduate());
