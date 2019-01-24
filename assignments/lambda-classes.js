@@ -38,6 +38,7 @@ class Students extends Person{
         this.previousBackground = studentAttributes.previousBackground;
         this.className = studentAttributes.className;
         this.favSubjects = studentAttributes.favSubjects;
+        this.grade = studentAttributes.grade;
     }
     listsSubjects(){
         this.favSubjects.forEach(x => console.log(`I enjoy ${x}`))
@@ -112,7 +113,8 @@ const tom = new Students({
     gender: "M",
     previousBackground: "audio",
     className: "WEB17",
-    favSubjects: ["Algorithms","Design","Mobile"]
+    favSubjects: ["Algorithms","Design","Mobile"],
+    grade: Math.round(Math.random()*100)
 })
 
 const ron = new Students({
@@ -122,7 +124,8 @@ const ron = new Students({
     gender: "M",
     previousBackground: "Construction",
     className: "IOS2",
-    favSubjects: ["Swift","IOS Dev","Java"]
+    favSubjects: ["Swift","IOS Dev","Java"],
+    grade: Math.round(Math.random()*100)
 })
 
 const jordan = new Students({
@@ -132,7 +135,8 @@ const jordan = new Students({
     gender: "F",
     previousBackground: "accountant",
     className: "WEB15",
-    favSubjects: ["React","Redux","ROR"]
+    favSubjects: ["React","Redux","ROR"],
+    grade: Math.round(Math.random()*100)
 })
 
 
