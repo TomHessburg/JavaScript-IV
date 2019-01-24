@@ -64,3 +64,118 @@ class ProjectManagers extends Instructors {
         console.log(`${this.name} debugs ${student.name}'s code on ${subject}`)
     }
 }
+
+
+
+
+console.log('====instructors====');
+
+const jim = new Instructors({
+    name: "Jim",
+    age: 33,
+    location: "Milwuakee",
+    gender: "M",
+    specialty: "Ruby frameworks",
+    favLanguage: "Ruby",
+    catchPhrase: "BUTTER MY BISCUITS"
+})
+
+const bob = new Instructors({
+    name: "Bob",
+    age: 52,
+    location: "San Francisco",
+    gender: "M",
+    specialty: "Redux",
+    favLanguage: "JavaScripts",
+    catchPhrase: "Well aint that somethin else..."
+})
+
+const betty = new Instructors({
+    name: "Betty",
+    age: 29,
+    location: "Los Angeles",
+    gender: "F",
+    specialty: "Versatility",
+    favLanguage: "all of them",
+    catchPhrase: "USE YOUR TOOLS"
+})
+
+
+
+
+
+            
+console.log('====students====');
+const tom = new Students({
+    name: "Tom",
+    age: 23,
+    location: "Orlando",
+    gender: "M",
+    previousBackground: "audio",
+    className: "WEB17",
+    favSubjects: "Algorithms"
+})
+
+const ron = new Students({
+    name: "Ron",
+    age: 29,
+    location: "Buffalo",
+    gender: "M",
+    previousBackground: "Construction",
+    className: "IOS2",
+    favSubjects: "swift"
+})
+
+const jordan = new Students({
+    name: "Jordan",
+    age: 19,
+    location: "Vernon",
+    gender: "F",
+    previousBackground: "accountant",
+    className: "WEB15",
+    favSubjects: "Rect"
+})
+
+
+
+
+
+console.log('====PMs====');
+
+const jess = new ProjectManagers({
+    name: "Jess",
+    age: 27,
+    location: "Orlando",
+    gender: "F",
+    specialty: "redux",
+    favLanguage: "C++",
+    catchPhrase: "i dont do catch phrases",
+    gradClassName: "WEB9",
+    favInstructor: "Josh"
+})
+
+const robin = new ProjectManagers({
+    name: "Robin",
+    age: 41,
+    location: "Jacksonville",
+    gender: "F",
+    specialty: "C",
+    favLanguage: "C",
+    catchPhrase: "It all comes with time",
+    gradClassName: "WEB14",
+    favInstructor: "Sean"
+})
+const zach = new ProjectManagers({
+    name: "Zach",
+    age: 34,
+    location: "Miami",
+    gender: "M",
+    specialty: "Mobil",
+    favLanguage: "swift",
+    catchPhrase: "i ALSO dont do catch phrases.. very serious business here",
+    gradClassName: "IOS4",
+    favInstructor: "Josh"
+})
+
+
+
