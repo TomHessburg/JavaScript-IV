@@ -1,4 +1,6 @@
 // CODE here for your Lambda Classes
+console.log("=================begin classes=============");
+
 class Person { //base class
     constructor(attributes){
         this.name = attributes.name;
@@ -68,7 +70,7 @@ class ProjectManagers extends Instructors {
 
 
 
-console.log('====instructors====');
+
 
 const jim = new Instructors({
     name: "Jim",
@@ -103,9 +105,6 @@ const betty = new Instructors({
 
 
 
-
-            
-console.log('====students====');
 const tom = new Students({
     name: "Tom",
     age: 23,
@@ -113,7 +112,7 @@ const tom = new Students({
     gender: "M",
     previousBackground: "audio",
     className: "WEB17",
-    favSubjects: "Algorithms"
+    favSubjects: ["Algorithms","Design","Mobile"]
 })
 
 const ron = new Students({
@@ -123,7 +122,7 @@ const ron = new Students({
     gender: "M",
     previousBackground: "Construction",
     className: "IOS2",
-    favSubjects: "swift"
+    favSubjects: ["Swift","IOS Dev","Java"]
 })
 
 const jordan = new Students({
@@ -133,14 +132,11 @@ const jordan = new Students({
     gender: "F",
     previousBackground: "accountant",
     className: "WEB15",
-    favSubjects: "Rect"
+    favSubjects: ["React","Redux","ROR"]
 })
 
 
 
-
-
-console.log('====PMs====');
 
 const jess = new ProjectManagers({
     name: "Jess",
@@ -177,5 +173,57 @@ const zach = new ProjectManagers({
     favInstructor: "Josh"
 })
 
+
+
+
+
+
+
+
+
+console.log('====instructors====');
+console.log(jim);
+console.log(bob);
+console.log(betty);
+
+
+console.log('====students====');
+console.log(tom);
+console.log(ron);
+console.log(jordan);
+
+
+console.log('====PMs====');
+console.log(jess);
+console.log(robin);
+console.log(zach);
+
+
+
+console.log("               ==========stuff that they can do==========");
+
+console.log(' ');
+console.log('           ===everyone can speak()===');
+console.log(jim.speak());
+console.log(tom.speak());
+console.log(jess.speak());
+
+console.log(' ');
+console.log('           ===teachers and pms can demo() and grade()===');
+console.log(jim.demo("JavaScript"));
+console.log(bob.grade(tom, "JavaScript"));
+console.log(jess.demo("Swift"));
+console.log(zach.grade(ron, "Swift"));
+
+console.log(' ');
+console.log('           ===only PMs can standUp() and debugsCode()===');
+console.log(robin.standUp("#WEB17"));
+console.log(jess.debugsCode(tom, "JavaScript"));
+
+console.log(' ');
+console.log('           ===only students can listsSubjects(),PRAssignment(subject), and sprintChallenge(subject)===');
+console.log(tom.listsSubjects())
+console.log(ron.PRAssignment("prototypes"))
+console.log(jordan.sprintChallenge("classes"))
 
 
